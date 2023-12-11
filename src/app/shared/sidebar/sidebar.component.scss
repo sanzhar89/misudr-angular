@@ -1,0 +1,45 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+mat-drawer {
+  width: 18vw;
+  background: linear-gradient(to bottom, #11abdf, #392e76);
+}
+
+.side-container {
+  flex: 1;
+}
+
+mat-list-item > button {
+  color: #fff;
+}
+
+.mat-toolbar.mat-primary {
+  --mat-toolbar-container-background-color: #1682c3;
+}
+
+.mat-mdc-button.mat-unthemed {
+  --mdc-text-button-label-text-color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 1vw;
+    margin-left: 0.5vw;
+  }
+}
+
+.custom-icon {
+  width: 24px; /* Замените этот размер на желаемый размер иконки */
+  height: 24px; /* Замените этот размер на желаемый размер иконки */
+  margin-right: 10px; /* Расстояние между иконкой и заголовком */
+}

@@ -1,0 +1,126 @@
+<div class="example-container">
+  <mat-drawer-container class="side-container" autosize>
+    <mat-drawer #drawer mode="side" opened>
+      <mat-toolbar color="primary" class="toolbar">
+        <div class="logo-container">
+          <img
+            src="assets/img/edensaulyq-logo.svg"
+            alt="e-densaulyq"
+            class="logo-icon"
+          />
+          <h1>e-Densaulyq</h1>
+        </div>
+      </mat-toolbar>
+      <h4 style="color: #fff; margin-left: 1.5vw; margin-top: 1.5vw">МИСУДР</h4>
+      <mat-nav-list>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>dashboard</mat-icon> Реципиенты
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- Вложенный список для подпунктов -->
+          <mat-nav-list>
+            <mat-list-item>
+              <a
+                mat-list-item
+                routerLink="/page1"
+                routerLinkActive="router-link-active no-border"
+              >
+                Регистрация
+              </a>
+            </mat-list-item>
+            <mat-list-item>
+              <a
+                mat-list-item
+                routerLink="/page2"
+                routerLinkActive="router-link-active no-border"
+              >
+                Поиск реципиентов
+              </a>
+            </mat-list-item>
+            <mat-list-item>
+              <a
+                mat-list-item
+                routerLink="/page2"
+                routerLinkActive="router-link-active no-border"
+              >
+                Исследования реципиентов
+              </a>
+            </mat-list-item>
+            <mat-list-item>
+              <a
+                mat-list-item
+                routerLink="/page2"
+                routerLinkActive="router-link-active no-border"
+              >
+                Данные обследовния
+              </a>
+            </mat-list-item>
+          </mat-nav-list>
+        </mat-expansion-panel>
+        <mat-list-item>
+          <button mat-button>
+            <mat-icon>assignment</mat-icon> Лист ожидания
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button><mat-icon>book</mat-icon> Доноры</button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button>
+            <mat-icon>bookmark_border</mat-icon> Трансплантации
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button><mat-icon>card_travel</mat-icon> Отчеты</button>
+        </mat-list-item>
+      </mat-nav-list>
+      <h4 style="color: #fff; margin-left: 1.5vw; margin-top: 1.5vw">
+        Администрирование
+      </h4>
+      <mat-nav-list>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>dashboard</mat-icon> Настройки
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- Вложенный список для подпунктов -->
+          <mat-nav-list>
+            <mat-list-item>
+              <a
+                mat-list-item
+                routerLink="/page1"
+                routerLinkActive="router-link-active no-border"
+              >
+                Регистрация
+              </a>
+            </mat-list-item>
+            <mat-list-item>
+              <a
+                mat-list-item
+                routerLink="/page2"
+                routerLinkActive="router-link-active no-border"
+              >
+                Поиск реципиентов
+              </a>
+            </mat-list-item>
+          </mat-nav-list>
+        </mat-expansion-panel>
+        <mat-list-item>
+          <button mat-button>
+            <mat-icon>assignment</mat-icon> Нормативно-справочная информация
+          </button>
+        </mat-list-item>
+        <mat-list-item>
+          <button mat-button><mat-icon>book</mat-icon> Уведомления</button>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-header></app-header>
+      <app-search-recipients></app-search-recipients>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
